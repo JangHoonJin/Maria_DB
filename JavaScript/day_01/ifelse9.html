@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let kor = prompt("잠양의 도촬 실력을 입력하세요");
+        kor = Number(kor);
+    let eng = prompt("잠양의 수풀에 숨기 실력을 입력하세요");
+        eng = Number(eng);
+    let mat = prompt("잠양의 어린이집 침입 실력을 입력하세요");
+        mat = Number(mat);
+
+
+    // kor - 잠양 도촬부분
+    if(kor >= 90) {
+        console.log("1급 도촬 잠양입니다.");
+    } else if (kor >= 80) {
+        console.log("2급 도촬 잠양입니다.");
+    } else if (kor >= 70) {
+        console.log("3급 도촬 잠양입니다.");
+    } else if (kor >= 60) {
+        console.log("4급 도촬 잠양입니다.");
+    } else {
+        console.log("잠양이 경찰서에 잡혀갔습니다.");
+    }
+
+    // eng - 잠양 수풀에 숨기 실력부분
+    if(eng >= 90 ) {
+        console.log("1급 수풀숨기 실력입니다.");
+    } else if(eng >= 80) {
+        console.log("2급 수풀숨기 실력입니다.");
+    } else if (eng >= 70) {
+        console.log("3급 수풀숨기 실력입니다.");
+    } else if (eng >= 60) {
+        console.log("4급 수풀숨기 실력입니다.");
+    } else {
+        console.log("잠양이 경찰서에 잡혀갔습니다.");
+    }
+
+    // mat - 잠양의 어린이집 침입실력 부분
+
+    if(mat >= 90) {
+        console.log("1급 침입 실력입니다.");
+    } else if (mat >= 80) {
+        console.log("2급 침입 실력입니다.");
+    } else if (mat >= 70) {
+        console.log("3급 침입 실력입니다.");
+    } else if (mat >= 60) {
+        console.log("4급 침입 실력입니다.");
+    } else {
+        console.log("잠양이 경찰서에 잡혀갔습니다.");
+    }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

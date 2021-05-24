@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+
+// prompt 로 구구단을 입력받아서
+// 시작단과 끝단을 입력하면 ex= 3 , 5 를 입력하면
+// 구구단이 3~5단까지가 모두 나오게끔 작성하라.
+
+// 3,5를 입력을 하면
+// 3단이 모두 나오고
+// 4단이 모두나오고
+// 5단이 모두나오고
+
+let startdan = prompt("시작단을 입력해");
+    startdan = Number(startdan);
+
+let enddan = prompt("끝단을 입력해");
+    enddan = Number(enddan);
+
+
+for (let i=startdan; i<=enddan; i++) {
+    for(let j=1; j<=9; j++) {
+        console.log(i + " x " + j + " = " + i*j);
+    }
+}
+
+
+</script>
+
+</body>
+</html>
