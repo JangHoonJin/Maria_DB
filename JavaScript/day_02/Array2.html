@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 선언 및 초기화
+        let arr1 = [1,2,3,4];
+        
+        // 선언부분
+        let arr2 = [];
+        
+        //초기화 부분
+        arr2[0] = 1;
+        arr2[1] = 2;
+        arr2[2] = 3;
+        arr2[3] = 4;
+        arr2[4] = 5;
+
+        // console.log(arr2[0]);
+        // console.log(arr1);
+
+            //for문을 이용한 전체 데이터 확인
+
+            for(let i=0; i<arr1.length; i++) {
+                console.log(arr1[i]);
+            }
+
+
+            //향상된 for문 / for in문
+
+            for(let index in arr1) {
+                console.log(index, arr1[index]);
+            }
+
+    </script>
+
+</body>
+</html>
