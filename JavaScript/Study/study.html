@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+        // 학교성적 알람표를 만들어야함
+        // 과목 옆에는 비워놔야함
+
+        // input 태그를 이용해서 2개의 숫자를 입력받아야함
+let valuess = () => {
+    let student = Number(document.querySelector("#sbj").value);
+    let subject = Number(document.querySelector("#stu").value);
+    let count = 0;
+    let page = 2;
+    
+    // 조건부
+    if (student > 100) {
+        alert("학생수가 100명을 초과합니다.");
+        return;
+    } else if (student < 40) {
+        alert("학생수가 40명 이하 입니다.");
+        return;
+    }
+
+    if(subject > 20) {
+        alert("과목수는 20개를 초과할 수 없습니다.");
+        return;
+    }
+
+    
+    //시작부분 페이지 표시
+
+    //페이지 숫자 증가
+
+    // 출력부
+    document.write("<h4>" + "페이지 1" + "</h4>" + "<br>");
+    for(let i=1; i<=student; i++) {
+        
+        document.write("=========");
+        count++
+            
+        if(count == 20 ) {
+            document.write("<h4>" + "페이지"+ page + "</h4>" + "<br>");
+            count = 0;
+            page++;
+        }
+
+        document.write("<br>" +"학생이름 : " + i + "<br>");
+        count++
+
+        if(count == 20 ) {
+            document.write("<h4>" + "페이지"+ page + "</h4>" + "<br>");
+            count = 0;
+            page++;
+        }
+
+            for(let j=1; j<=subject; j++) {
+                document.write("과목 " + j + " : " + "<br>");
+                count++;
+            
+                if(count == 20 ) {
+                    document.write("<h4>" + "페이지"+ page + "</h4>" + "<br>");
+                    count = 0;
+                    page++;
+                }
+            }
+    }
+
+    
+
+
+}
+
+    
+
+
+ /*
+for(let i=1; i<10; i++) {
+    for(let j=1; j<10; j++){
+        document.write(i + " x " + j + " = " + i*j +"<br>");
+    }
+}
+*/
+        
+        // 첫번째 : 과목수 (20개 이내)    
+
+        //학생수 = 40~100까지
+
+
+        //최대 표시줄수 20줄
+
+        // 페이지의 최상단에는 페이지 번호를 표시
+
+        // 페이지 하단에는 ================ 한줄 표시
+
+        // 학생이름은 학생명: 학생번호로 표시
+
+        // 각 과목은 1줄에 1개씩만 표시
+
+        // 시작,끝부분에 -------- 구분선을 표시할것
+
+
+
+
+</script>
+    
+
+    
+<input type="text" name="sbj" id="sbj"  >
+<input type="text" name="stu" id="stu"  >
+<input type="button" name="btn" value="출력하기" onclick="valuess()" >
+
+
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+    let rfunc = function(){
+        return function() {
+            console.log("hello Function1")
+        }
+    }
+
+    let rfunc2 = function(type) {
+        if(type == 1) {
+            return function() {
+                console.log("함수 선언 1 호출");
+            }
+        }else {
+            return function() {
+                console.log("함수 선언 2 호출")
+            }
+        }
+
+    }
+
+
+</script>
+
+</head>
+<body>
+    
+<script>
+
+    let result = rfunc();
+    result();
+    console.log(typeof result);
+    console.log(result);
+
+    rfunc2()();
+
+    rfunc2(0)();
+    rfunc2(1)();
+    rfunc2(2)();
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const func1 = function(){
+            console.log("함수 호출1");
+        }
+
+        const func2 = function(param){
+            console.log("함수호출2",param);
+        }
+
+        const func3 = () => {
+            console.log("함수호출3");
+        }
+
+        const func4 = param => {
+            console.log("함수호출4", param);
+        }
+
+    </script>
+
+</head>
+<body>
+    <script>
+        func1();
+        func2();
+        func3(10);
+        func4(10);
+
+
+    </script>
+
+</body>
+</html>

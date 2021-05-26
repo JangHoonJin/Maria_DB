@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+    let outer = function(){
+        //외부 함수 부분
+        let inner1 = function(){
+            //내부 함수 부분
+            console.log("내부함수1 실행");
+        }
+        
+        let inner2 = function(){
+            //내부 함수 부분
+            console.log("내부함수2 실행");
+        }
+        
+        console.log("외부함수 실행");
+
+        //내부에서 호출하는 부분
+        inner1();
+        inner2();
+        
+    }
+
+
+</script>
+
+</head>
+<body>
+    
+<script>
+
+outer();
+
+</script>
+
+</body>
+</html>

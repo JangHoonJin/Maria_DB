@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let val = () => {
+    //과목수, 학생수를 button을 누르면 작동하게 작성
+    let student = document.querySelector("#str1").value;
+    let subject = document.querySelector("#ed1").value;
+    let count = 0;
+
+    //과목수 = 20개 이내
+    //학생수는 40명 이상 100명 이하
+
+    //실행문이 실행되기 전에 
+
+    // 학생수는 40명 이상 100명 이하의 조건을 설정
+
+    if(student<40) {
+        alert("학생수가 40명 이하입니다.");
+        return;
+    }
+
+
+    // 과목수는 20개 이하 조건을 설정
+
+    if(subject > 20) {
+        alert("과목수가 20개를 초과합니다.");
+        return;
+
+    }
+
+    
+
+    document.write( "<h4>" + "페이지1" + "</h4>");
+    document.write("<hr>");
+
+    for(let i=1; i<=student; i++) {
+        document.write("학생이름 :" + i + "<br>");
+        
+        for(let j=1; j<=subject; j++) {
+            document.write("과목" + j + "<br>");
+
+        }
+    }
+
+    document.write("<hr>");
+
+}
+
+
+
+</script>
+
+<input type="text" name="start1" id="str1">
+<input type="text" name="end" id="ed1">
+<input type="button" value="출력" onclick="val()">
+</body>
+</html>
